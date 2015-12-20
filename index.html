@@ -9,10 +9,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Stylish Portfolio - Start Bootstrap Theme</title>
+    <title>Nicolas Fry</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- typed custom CSS -->
+    <link href="css/typed.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/stylish-portfolio.css" rel="stylesheet">
@@ -28,6 +31,42 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <script src="js/typed.js"></script>
+    <script>
+    $(function(){
+        $(".typeText").typed({
+          stringsElement: $('#typed-strings'),
+          typeSpeed: 10,
+          backSpeed: 0,
+        });
+      });
+    </script>
+    <style>
+    .typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+    }
+    @keyframes blink{
+        0% { opacity:1; }
+        50% { opacity:0; }
+        100% { opacity:1; }
+    }
+    @-webkit-keyframes blink{
+        0% { opacity:1; }
+        50% { opacity:0; }
+        100% { opacity:1; }
+    }
+    @-moz-keyframes blink{
+        0% { opacity:1; }
+        50% { opacity:0; }
+        100% { opacity:1; }
+    }
+    </style>
 </head>
 
 <body>
@@ -61,9 +100,21 @@
     <!-- Header -->
     <header id="top" class="header">
         <div class="text-vertical-center">
-            <h1>Start Bootstrap</h1>
-            <h3>Free Bootstrap Themes &amp; Templates</h3>
-            <br>
+
+          <div id="typed-strings">
+            <p>I am studying Computer Engineering at the University of Florida^1200 ...Go Gators!!</p>
+            <p>I want to get into software sales ^1700</p>
+            <p>I like Computer Vision applications ^1400</p>
+            <p>I love the city of Fort Lauderdale ^800 as you can see...</p>
+            <p>Together, we can  make South Florida a Tech Hub!</p>
+          </div>
+
+          <div class = "typedElement">
+            <h1>Hey I'm Nicolas,</h1>
+            <span class="typeText">
+            </span>
+          </div>
+
             <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
         </div>
     </header>
@@ -263,7 +314,7 @@
     </footer>
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <!-- <script src="js/jquery.js"></script> -->
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
