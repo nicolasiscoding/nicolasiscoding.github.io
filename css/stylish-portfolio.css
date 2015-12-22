@@ -158,10 +158,15 @@ hr.small {
     height: 100%;
     background: url(../img/bgpng.png) top center no-repeat fixed;
     /*no-repeat center center fixed*/;
-    -webkit-background-size: cover;
+    /*-webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
-    -o-background-size: cover;
+    -o-background-size: cover;*/
+
+    -webkit-background-size: 1500px 1000px;
+    -moz-background-size: 1500px 1000px;
+    background-size: 1500px 1000px;
+    -o-background-size: 1500px 1000px;
 }
 
 /* About */
