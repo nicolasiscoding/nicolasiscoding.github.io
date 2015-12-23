@@ -3547,6 +3547,11 @@ tbody.collapse.in {
   right: 0;
   left: auto;
 }
+.overflowkill
+{
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
 .dropdown-menu .divider {
   height: 1px;
   margin: 9px 0;
