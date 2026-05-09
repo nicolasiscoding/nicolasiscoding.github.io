@@ -1,4 +1,5 @@
 import { SectionLabel } from "./SectionLabel";
+import { TurboDocxLink } from "./TurboDocxLink";
 
 const FONTS = {
   heading: "'Spectral', Georgia, serif",
@@ -60,7 +61,7 @@ export function About() {
               rowGap: 6,
             }}
           >
-            <Row k="Now" v="Founder, TurboDocx" />
+            <Row k="Now" v={<>Founder, <TurboDocxLink /></>} />
             <Row
               k="Before"
               v="Startups*, Okta/Auth0, Citrix, FlexShopper, UKG"
@@ -116,9 +117,13 @@ export function About() {
             }}
           >
             For the last few years I&apos;ve been building{" "}
-            <em style={{ color: "var(--accent)" }}>TurboDocx</em> — a document
-            automation platform for teams that ship a lot of paper,
-            presentations, and signatures.
+            <TurboDocxLink>
+              <em style={{ color: "var(--accent)", fontStyle: "italic" }}>
+                TurboDocx
+              </em>
+            </TurboDocxLink>{" "}
+            — a document automation platform for teams that ship a lot of
+            paper, presentations, and signatures.
           </p>
           <p
             style={{

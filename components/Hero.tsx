@@ -1,4 +1,5 @@
 import { Typewriter } from "./Typewriter";
+import { TurboDocxLink } from "./TurboDocxLink";
 import { TYPEWRITER_LINES } from "@/lib/content";
 
 const FONTS = {
@@ -171,8 +172,8 @@ export function Hero() {
             }}
           >
             Software engineer by craft, founder by trade, technology enthusiast
-            by practice. Currently building TurboDocx and writing from the
-            Florida coast.
+            by practice. Currently building <TurboDocxLink /> and writing from
+            the Florida coast.
           </p>
 
           <div

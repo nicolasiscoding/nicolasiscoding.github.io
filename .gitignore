@@ -5,3 +5,8 @@ out/
 next-env.d.ts
 .DS_Store
 .env*.local
+
+# LLM plugin generated files (generated at build time)
+app/**/*.html.md/
+app/llms.txt/
+app/llms-full.txt/

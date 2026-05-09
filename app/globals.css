@@ -168,6 +168,12 @@ a {
 .crumb-trail .back:hover {
   color: var(--accent);
 }
+
+/* TurboDocx mention link — same color as surrounding prose, accent on hover */
+.td-link:hover {
+  color: var(--accent);
+  border-color: var(--accent) !important;
+}
 .topbar .crumb-dot {
   width: 8px;
   height: 8px;
