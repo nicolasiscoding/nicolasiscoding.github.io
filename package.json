@@ -10,7 +10,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@turbodocx/next-plugin-llms": "github:TurboDocx/next-plugin-llms",
     "next": "^16.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
