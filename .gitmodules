@@ -1,0 +1,4 @@
+[submodule "vendor/next-plugin-llms"]
+	path = vendor/next-plugin-llms
+	url = git@github.com:TurboDocx/next-plugin-llms.git
+	branch = fix/css-extraction-and-dynamic-routes
